@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> About me | Jeffrey V. Backus </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f8f9fb;
+      color: #222;
+    }
+    header {
+      background: #111827;
+      color: #f9fafb;
+      padding: 1.5rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+    main {
+      padding: 2rem 0 3rem 0;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .tagline {
+      margin-top: 0.3rem;
+      font-size: 1rem;
+      color: #9ca3af;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .pub {
+      margin-bottom: 0.75rem;
+    }
+    .pub-title {
+      font-weight: 500;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #6b7280;
+      text-align: center;
+      background: #f3f4f6;
+    }
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jeffrey V. Backus</h1>
+      <div class="tagline">PhD Candidate in Theoretical Physics at Princeton University </div>
+      <nav style="margin-top: 0.75rem;">
+        <a href="#index.html">About me</a>
+        <a href="#research.html">Research</a>
+        <a href="#publications.html">Publications</a>
+        <a href="#CV.html">CV (PDF)</a>
+      </nav>
+    </div>
+  </header>
+
+    <div class="about-layout">
+    <img src="me.JPG" alt="Photo of Jeffrey Backus" class="profile-pic">
+
+    <div>
+
+  <main>
+    <div class="container">
+
+      <section id="about">
+        <h2> Curriculum Vitae </h2>
+        <p>
+          Download here
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Jeffrey V. Backus. All opinions are my own.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
