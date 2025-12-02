@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title> About me | Jeffrey V. Backus </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f8f9fb;
+      color: #222;
+    }
+    header {
+      background: #111827;
+      color: #f9fafb;
+      padding: 1.5rem 1rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1, h2, h3 {
+      font-weight: 600;
+    }
+    main {
+      padding: 2rem 0 3rem 0;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .tagline {
+      margin-top: 0.3rem;
+      font-size: 1rem;
+      color: #9ca3af;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    .pub {
+      margin-bottom: 0.75rem;
+    }
+    .pub-title {
+      font-weight: 500;
+    }
+    .meta {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    footer {
+      border-top: 1px solid #e5e7eb;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      color: #6b7280;
+      text-align: center;
+      background: #f3f4f6;
+    }
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Jeffrey V. Backus</h1>
+      <div class="tagline">PhD Candidate in Theoretical Physics at Princeton University </div>
+      <nav style="margin-top: 0.75rem;">
+        <a href="#about">About me</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#contact">Contact / CV</a>
+      </nav>
+    </div>
+  </header>
+
+    <div class="about-layout">
+    <img src="me.JPG" alt="Photo of Jeffrey Backus" class="profile-pic">
+
+    <div>
+
+  <main>
+    <div class="container">
+
+      <section id="about">
+        <h2>About me</h2>
+        <p>
+          I am a PhD student in theoretical physics at [Institution], advised by [Advisor Name].
+          My research focuses on [short description: e.g., quantum field theory and holography,
+          or strongly-correlated condensed matter, etc.].
+        </p>
+        <p>
+          Broadly, I’m interested in [1–2 slightly broader interests], and how tools from
+          [math/CS/etc. you use] can be used to understand [your favorite type of system].
+        </p>
+      </section>
+
+      <section id="research">
+        <h2>Research</h2>
+
+        <h3>Topic 1: [Concise title]</h3>
+        <p>
+          2–4 sentences giving a high-level description that another physicist in a different
+          subfield could follow. What’s the question, why does it matter, and what do you do?
+        </p>
+
+        <h3>Topic 2: [Optional second line of work]</h3>
+        <p>
+          Same idea: a short, concept-level description, not a paragraph of jargon.
+        </p>
+      </section>
+
+      <section id="publications">
+        <h2>Publications &amp; Preprints</h2>
+
+        <div class="pub">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/xxx" target="_blank" rel="noopener noreferrer">
+              [Paper Title]
+            </a>
+          </div>
+          <div class="meta">
+            [Authors] · [Journal or arXiv:xxxx.xxxxx] · [Year]
+          </div>
+          <div>
+            One-sentence summary of what this paper actually shows.
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-title">
+            <a href="https://arxiv.org/abs/yyy" target="_blank" rel="noopener noreferrer">
+              [Next Paper Title]
+            </a>
+          </div>
+          <div class="meta">
+            [Authors] · [Status] · [Year]
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2> CV </h2>
+        <p class="contact">
+          Email: <a href="mailto:you@institution.edu">you@institution.edu</a><br>
+          GitHub: <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            github.com/yourusername
+          </a><br>
+          arXiv: <a href="https://arxiv.org/a/your_arxiv_id" target="_blank" rel="noopener noreferrer">
+            arXiv author page
+          </a><br>
+          Google Scholar: <a href="https://scholar.google.com/citations?user=YOURID" target="_blank" rel="noopener noreferrer">
+            Google Scholar
+          </a><br>
+          CV: <a href="cv.pdf" target="_blank" rel="noopener noreferrer">PDF</a> (place a file named <code>cv.pdf</code> in this folder)
+        </p>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Jeffrey [Last Name]. All opinions are my own.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
